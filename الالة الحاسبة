@@ -1,0 +1,24 @@
+def sum(n1=0,n2=0):
+    result=n1+n2  
+    return result
+    
+def sub(n1=0,n2=0):
+    result=n1-n2
+    return result
+    
+def div(n1=0,n2=0):
+    if n2==0:
+        print("Error Divided by Zero")
+    else:
+        result=n1/n2
+        return result
+n1=int(input("enter first number"))
+n2=int(input("enter second number "))
+ch=input("choose operator +/- ")
+ 
+if ch=='+':
+    print(f"the summtion is {sum(n1,n2)}")
+elif ch=='-':
+    print(f"the subtraction is{sub(n1, n2)}")  
+else:
+     print(f"the division is {div(n1, n2)}")
